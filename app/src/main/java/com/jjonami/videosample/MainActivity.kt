@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setScreenOn(true)
 
         savedInstanceState ?: supportFragmentManager.beginTransaction()
-                .replace(R.id.container, RecordingFragment())
+                .replace(R.id.container, RecordingFragment.newInstance())
                 .commit()
     }
 
